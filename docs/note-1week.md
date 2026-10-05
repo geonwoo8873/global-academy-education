@@ -1,4 +1,4 @@
-# 1. AI Application Architect 
+# 1. Global Academy 1Week Learn Note
 
 ---
 
@@ -36,7 +36,7 @@
 
 ## 2.1 상호작용 흐름
 
-#### HTTP [Hyper Transfer Protocol]
+#### 1. HTTP [Hyper Transfer Protocol]
 
 | TYPE | DESCRIPTION    |
 | ---- | -------------- |
@@ -65,7 +65,7 @@ curl www.microsoft.com
 
 </details>
 
-#### API [Application Programing Interface]
+#### 2. API [Application Programing Interface]
 
 컴퓨터나 컴퓨터 프로그래밍 사이의 연결로 일종의 소프트웨어 인터페이스 (`Software Interface`)이며 다른 종류의 소프트웨어에 서비스를 제공한다. 연결 또는 인터페이스를 빌드하거나 사용하는 방법을 기술하는 문서 표준을 API 규격이라고 칭하여 이에 대한 표준을 충족하는 컴퓨터 시스템은 API가 구현 (`Implement`)되었다거나 노출 (`Expose`)되었다고 말하기 때문에 하나의 API라는 단어가 사양이나 구현체를 의미할 수 있다.
 
@@ -164,7 +164,7 @@ func main() {
 </details>
 
 
-#### JSON [JavaScript Object Notation]
+#### 3. JSON [JavaScript Object Notation]
 
 <details>
 <summary>AWS IAM Policy apply editing JSON</summary>
@@ -277,7 +277,50 @@ VPN은 개인 데이터를 암호화 (`Encryption`)하고 승인되지 않은 �
 
 ## 2.2 스토리지 [Storage]
 
+기본적인 스토리지의 개념은 사용중인 마더보드에 장착되어 있는 구성 부품중 하나로 데이터 및 지침을 저장하는 컴퓨터 구성 요소이다.
 
+기본 스토리지는 메인 메모리라고도 불려, 중앙처리장치 (`CPU`)와 직접적인 데이터 수신호가 진행되기 때문에 읽고 쓰는 것이 간단하다. 이를 통해 프로세스는 기본 스토리지가 보유하고 있는 데이터 및 명령에 더욱 빠른 액세스가 가능하다. 또한 내부 메모리라고 부르는 주 메모리 또는 기본 메모리는 컴퓨터가 작동할 때 액세스할 수 있는 비교적 적은 양의 데이터를 저장한다. 보조 메모리라고도 하는 외부 메모리에는 지속적인 방식으로 데이터를 저장할 수 있는 스토리지 장치가 포함된다.
+
+<details>
+<summary>Storage Size CMD</summary>
+
+```bash
+$ df
+Filesystem     1K-blocks      Used Available Use% Mounted on
+D:/Git         208539644  22809868 185729776  11% /
+C:             767090684 130434468 636656216  18% /c
+```
+
+```bash
+$ df -BG
+Filesystem     1G-blocks  Used Available Use% Mounted on
+D:/Git              199G   22G      178G  11% /
+C:                  732G  125G      607G  18% /c
+```
+
+</details>
+
+<defails>
+<>
+
+
+</details>
+
+### 2.2.1 기본 스토리지 작동 원리
+
+기본 스토리지는 CPU에서 현재 사용 중인 데이터와 명령어를 유지 관리하여 작동한다. 프로그램 실행하기 위해 CPU는 기본 스토리지에 연결하여 필요한 명령을 가져오고 컴퓨터 처리에 필수적인 운영 작업을 담당한다.
+
+**운영 체제 (OS, Operating System) 로드**
+
+컴퓨터가 작동하기 시작하면 운영 체제의 필요한 구성 요소가 하드 디스크 (`HDD`, `Hard Disk Drive`)나 고체 상태 드라이브 (`SSD`, `Solid State Drive`)에서 RAM으로 추가되는 부팅 주기를 거친다. OS가 로드되면 시스템은 작업을 관리할 준비가 된 것이다.
+
+**앱 실행 (Application Run)**
+
+애플리케이션을 실행하기 전에 먼저 기존 디스크 위치에서 RAM으로 로드되며, RAM은 앱 실행을 조정하고 원래 표시했던 것보다 빠른 데이터 검색을 제공한다.
+
+**데이터 처리**
+
+RAM에 로드되는 것은 앱뿐만 아니라 애플리케이션에서 처리해야 하는 모든 데이터도 포함된다. 고등 수학 부터 렌더링된 이미지 및 편집된 파일을 처리하는 앱과 같은 다양한 앱의 데이터를 포함한다.
 
 ## 2.3 데이터베이스 [Database]
 
@@ -290,7 +333,7 @@ VPN은 개인 데이터를 암호화 (`Encryption`)하고 승인되지 않은 �
 # 4. Python
 
 > [!IMPORTANT]
-> **Python에 대한 튜토리얼 개념의 샘플은 [tour-learn-collection](https://github.com/geonwoo8873/tour-learn-collection) Repository 에서 확인할 수 있다.**
+> **Python에 대한 튜토리얼 개념의 샘플은 [tour-learn-collection](https://github.com/geonwoo8873/tour-learn-collection/tree/main/programming-language/python) Repository 에서 확인할 수 있다.**
 
 ---
 ---
@@ -300,8 +343,10 @@ VPN은 개인 데이터를 암호화 (`Encryption`)하고 승인되지 않은 �
 * [1. MDN HTTP Methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods)
 * [2. JSON Syntax](https://github.com/geonwoo8873/tour-learn-collection/blob/main/aws-credentials/solutions-architect-associate/2-aws-iam-introduction.md#53-%EA%B6%8C%ED%95%9C-%EB%B6%80%EC%97%AC-%EB%B0%8F-%EA%B6%8C%ED%95%9C-%EC%A0%95%EC%B1%85-%EA%B8%B0%EB%B3%B8)
 * [3. DNS](https://www.ibm.com/kr-ko/think/topics/dns)
-   * [3.1 DNS Type Advance](../docs/advance/network.md/#11-dns-type) 
+  * [3.1 DNS Type Advance](../docs/advance/network.md/#11-dns-type) 
 * [4. VPN](https://www.ibm.com/kr-ko/think/topics/vpn)
-   * [4.1 VPN Process Advance]()
+  * [4.1 VPN Process Advance]()
 * [5. API](https://www.ibm.com/kr-ko/think/topics/api)
 * [6. JSON](https://www.json.org/json-en.html)
+* [7. Sotrage](https://www.ibm.com/kr-ko/think/topics/api)
+  * [7.1 Data Storage](https://www.ibm.com/kr-ko/think/topics/data-storage)
