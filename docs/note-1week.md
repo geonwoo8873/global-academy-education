@@ -1,4 +1,4 @@
-# 1. Global Academy 1Week Learn Note
+# Global Academy 1Week Learn Note
 
 ---
 
@@ -8,7 +8,7 @@
 
 ---
 
-# 2. 풀-스택 개발 구상 순서
+# 1. 풀-스택 개발 구상 순서
 
 1. **User**
 2. **Frontend**
@@ -34,7 +34,7 @@
    * Docker Volume 
    * HDD, SSD, NVMe [RIAD]
 
-## 2.1 상호작용 흐름
+## 1.1 상호작용 흐름
 
 #### 1. HTTP [Hyper Transfer Protocol]
 
@@ -201,7 +201,7 @@ func main() {
 </details>
 
 
-## 2.2 네트워크 환경
+## 1.2 네트워크 환경
 
 #### 1. DNS [Domain Name System]
 
@@ -275,7 +275,7 @@ VPN은 개인 데이터를 암호화 (`Encryption`)하고 승인되지 않은 �
 
 리소스는 광범위하면서 서버, 데이터 스토리지, 소프트웨어, 네트워킹 디바이스, 애플리케이션 개발 도구 등이 포함될 수 있기에 규모의 상관 없이 대부분 기업들이 인터넷의 힘을 활용해 협업과 유연성을 개선함으로써 효율성과 확장 가능성을 높일 수 있도록 지원하게된다.
 
-## 2.2 스토리지 [Storage]
+## 1.3 스토리지 [Storage]
 
 기본적인 스토리지의 개념은 사용중인 마더보드에 장착되어 있는 구성 부품중 하나로 데이터 및 지침을 저장하는 컴퓨터 구성 요소이다.
 
@@ -300,13 +300,7 @@ C:                  732G  125G      607G  18% /c
 
 </details>
 
-<defails>
-<>
-
-
-</details>
-
-### 2.2.1 기본 스토리지 작동 원리
+### 1.3.1 기본 스토리지 작동 원리
 
 기본 스토리지는 CPU에서 현재 사용 중인 데이터와 명령어를 유지 관리하여 작동한다. 프로그램 실행하기 위해 CPU는 기본 스토리지에 연결하여 필요한 명령을 가져오고 컴퓨터 처리에 필수적인 운영 작업을 담당한다.
 
@@ -322,15 +316,15 @@ C:                  732G  125G      607G  18% /c
 
 RAM에 로드되는 것은 앱뿐만 아니라 애플리케이션에서 처리해야 하는 모든 데이터도 포함된다. 고등 수학 부터 렌더링된 이미지 및 편집된 파일을 처리하는 앱과 같은 다양한 앱의 데이터를 포함한다.
 
-## 2.3 데이터베이스 [Database]
+## 1.4 데이터베이스 [Database]
 
 
-# 3. React
+# 2. React
 
 > [!IMPORTANT]
 > **React에 대한 내용은 [Docs Advance React.md](../docs/advance/react.md)에서 설치와 기초 개념들을 정리 되어있다.**
 
-# 4. Python
+# 3. Python
 
 > [!IMPORTANT]
 > **Python에 대한 튜토리얼 개념의 샘플은 [tour-learn-collection](https://github.com/geonwoo8873/tour-learn-collection/tree/main/programming-language/python) Repository 에서 확인할 수 있다.**
