@@ -25,6 +25,8 @@ Exit Code 1603은 일반적인 MSI 설치 실패 코드로, 설치 프로그램 
 
 ### 2. [N-002] React Installer Error
 
+<details>
+
 ```ps
 npm error code EPERM
 npm error syscall mkdir
@@ -56,6 +58,8 @@ npm notice To update run: npm install -g npm@12.1.0
 npm notice
 npm error A complete log of this run can be found in: C:\Users\geonw\AppData\Local\npm-cache\_logs\2026-09-29T08_26_18_520Z-debug-0.log
 ```
+
+</details>
 
 #### **User Comment**
 
