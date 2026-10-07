@@ -38,13 +38,32 @@
 
 #### 1. HTTP [Hyper Transfer Protocol]
 
-| TYPE | DESCRIPTION    |
-| ---- | -------------- |
-| GET  | 기존 정보 조회 |
-| POST | 새 데이터 처리 요청 |
-| PUT | 데이터 수정 |
-| PATCH | 일부 데이터 수정 |
-| DELETE | 데이터 삭제 |
+<details>
+<summary>HTTP Status</summary>
+
+| TYPE   | DESCRIPTION         |
+| ------ | ------------------- |
+| GET    | 기존 정보 조회      |
+| POST   | 새 데이터 처리 요청 |
+| PUT    | 데이터 수정         |
+| PATCH  | 일부 데이터 수정    |
+| DELETE | 데이터 삭제         |
+
+| Status Code | Description               | Example                 |
+| ----------- | ------------------------- | ----------------------- |
+| 400         | 잘못된 요청               | 지원하지 않는 파일 옵션 |
+| 401         | 인증 필요 또는 인증 실패  | 유효하지 않은 Token     |
+| 403         | 권한 없음                 | 다른 사용자의 문서 접근 |
+| 404         | Resource 없음             | 문서를 찾을 수 없음     |
+| 409         | 현재 상태와 충돌          | 중복 문서 등록          |
+| 422         | 입력 데이터 검증 실패     | 필수 Field 누락         |
+| 429         | 요청 한도 초과            | AI 호출 Rate Limit      |
+| 500         | 예상하지 못한 서버 오류   | 코드 버그               |
+| 502         | 외부 서비스의 잘못된 응답 | AI Provider 응답 오류   |
+| 503         | 서비스 사용 불가          | AI Engine 일시 중단     |
+| 504         | 외부 서비스 응답 Timeout  | LLM 응답 시간 초과      |
+
+</details>
 
 <details>
 <summary>Curl request HTTP body output</summary>
@@ -194,7 +213,7 @@ func main() {
                 "*"
             ]
 		}
-	]
+	]0
 }
 ```
 
@@ -318,11 +337,14 @@ RAM에 로드되는 것은 앱뿐만 아니라 애플리케이션에서 처리�
 
 ## 1.4 데이터베이스 [Database]
 
+데이터베이스는 체계적인 데이터를 컬렉션 형태로 저장하거나 관리 및 보호하기 위한 디지털 방식 저장소라고 보면된다. 다양한 유형의 데이터베이스가 존재하고 동시에 각기다른 유형의 데이터를 관리하기 때문에 데이터 베이스는 재무 기록과 같은 구조화된 데이터에 적합하다 본다. 비관계형는 미디어와 텍스트와 같은 비정형 데이터 유형에 적합하지만 생성형 AI와 애플리케이션에서 사용하는 벡터 데이터 형태는 벡터 데이터베이스의 벡터 임베딩형태로 데이터를 저장한다.
+
+또한 데이터베이스는 다양한 데이터 아키텍처를 구축하기 위한 뼈대로 단순히 정보만을 저장하기 위한 도구가 아니라 중앙에서 데이터를 관리하고 무결성 및 보안 표준을 시행하며, 데이터 접근을 용이하게 할 수 있도록 지원한다.
 
 # 2. React
 
 > [!IMPORTANT]
-> **React에 대한 내용은 [Docs Advance React.md](../docs/advance/react.md)에서 설치와 기초 개념들을 정리 되어있다.**
+> **React에 대한 내용은 [Docs Advance React.md](../docs/advance/react.md)에서 설치와 기초 개념들을 정리중이다.**
 
 # 3. Python
 
@@ -344,3 +366,4 @@ RAM에 로드되는 것은 앱뿐만 아니라 애플리케이션에서 처리�
 * [6. JSON](https://www.json.org/json-en.html)
 * [7. Sotrage](https://www.ibm.com/kr-ko/think/topics/api)
   * [7.1 Data Storage](https://www.ibm.com/kr-ko/think/topics/data-storage)
+* [8. Database](https://www.ibm.com/kr-ko/think/topics/database#1003835715)
