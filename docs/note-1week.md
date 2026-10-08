@@ -90,53 +90,10 @@ curl www.microsoft.com
 
 API의 목적은 시스템이 동작하는 방식에 관한 내부의 세세한 부분을 숨기는 것으로 내부의 세세한 부분이 나중에 변경되더라도 프로그래머가 사용할 수 있고 일관성을 유지한 관리를 목표로 통제가 가능한 부분들만 노출 시킨다. API는 특정 시스템용으로 커스텀하게 빌드될 수 있고, 아니면 수 많은 시스템간 상호운용성을 허용하는 공유가 되는 표준일 수 있다. 
 
-<details>
-<summary>GET Request REST API call example 1</summary>
-
-```go
-package main
- 
-import (
-   "encoding/json"
-   "fmt"
-   "net/http"
-)
- 
-type User struct {
-   ID int `json:"id"`
-   Name string `json:"name"`
-   Email string `json:"email"`
-}
- 
-func main() {
-   url := "https://jsonplaceholder.typicode.com/users/1"
-    
-   resp, err := http.Get(url)
-   if err != nil {
-      panic(err)
-   }
-   defer resp.Body.Close()
-    
-   if resp.StatusCode != http.StatusOK {
-      fmt.Printf("API 호출 실패: %d\n", resp.StatusCode)
-      return
-   }
-    
-   var user User
-      if err := json.NewDecoder(resp.Body).Decode(&user); err != nil {
-      panic(err)
-   }
-    
-   fmt.Printf("ID: %d\n", user.ID)
-   fmt.Printf("Name: %s\n", user.Name)
-   fmt.Printf("Email: %s\n", user.Email)
-}
-```
-
 </details>
 
 <details>
-<summary>POST Request REST API call example 2</summary>
+<summary>POST Request REST API call example</summary>
 
 ```go
 package main
