@@ -38,6 +38,8 @@
 
 #### 1. HTTP [Hyper Transfer Protocol]
 
+HTTP는 HTML와 같은 하이퍼미디어 문서를 전송하기 위한 Application Layout Protocol로, 웹 블아주저와 웹 서버간의 통신을 위해 설계되었지만 다른 목적으로도 사용할 수 있기 때문에 HTTP는 클라이언트가 요청을 하기 위해 연결을 연 다음 응답을 받을때 까지 대기하는 전통적인 Client-Server Model을 따른다. HTTP는 무상태 프로토콜로 서버가 두 요청 간에 데이터도 유지하지 않는다.
+
 <details>
 <summary>HTTP Status</summary>
 
